@@ -6,7 +6,7 @@ from selene_in_action_py13.conditions import match
 def test_github_issue_title():
     with allure.step('Открываем главную страницу сайта GitHub'):
         browser.open('https://github.com')
-        browser.driver.fullscreen_window()
+
 
     with allure.step('Ищем репозиторий eroshenkoam/allure-example'):
         browser.element('[class="search-input"]').click()
