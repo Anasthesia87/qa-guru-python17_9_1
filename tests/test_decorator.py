@@ -14,6 +14,7 @@ def test_github_issue_title():
 @allure.step('Открываем главную страницу сайта GitHub')
 def open_main_page():
     browser.open('https://github.com')
+    browser.driver.fullscreen_window()
 
 
 @allure.step('Ищем репозиторий {repository_name}')
